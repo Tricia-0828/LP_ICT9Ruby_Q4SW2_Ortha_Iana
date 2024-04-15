@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+	<title>Javascript Events & Functions</title>
+<style type="text/css">
+	body{
+		background-image: url(Math.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	h1{
+		background-color: black;
+		font-size: 55px;
+		font-family: Dancing Script;
+		color: #FF3AAE;
+		padding: 5px;
+		border-top: solid 7px #dbb11a;
+		border-left: solid 7px #dbb11a;
+		border-right: solid 7px #dbb11a;
+		border-bottom: solid 7px #dbb11a;
+	}
+	.M{
+		background-color: #F7AEF8;
+		border-color: black;
+		font-size: 30px;
+		padding: 6px;
+		margin-right: 20px;
+	}
+	.D{
+		background-color: #fd788b;
+		border-color: black;
+		font-size: 30px;
+		padding: 6px;
+		margin-right: 20px;
+	}
+	.A{
+		background-color: #FF8ECC;
+		border-color: #B795E4;
+		font-size: 30px;
+		padding: 9px;
+		margin-right: 20px;
+	}
+	.S{
+		background-color: #bd8bc9;
+		border-color: black;
+		font-size: 30px;
+		padding: 6px;
+		margin-right: 20px;
+	}
+	.G{
+		background-color: #FED8EC;
+		border-color: #9667E0;
+		font-size: 30px;
+		padding: 6px;
+		margin-right: 20px;
+	}
+	.L{
+		background-color: #E49CB4;
+		border-color: black;
+		font-size: 30px;
+		padding: 6px;
+		margin-right: 20px;
+	}
+	.E{
+		background-color: #f01ff0;
+		border-color: black;
+		font-size: 30px;
+		padding: 6px;
+		margin-right: 20px;
+	}
+	.R{
+		background-color: #bd3191;
+		border-color: black;
+		font-size: 30px;
+		padding: 6px;
+		margin-right: 20px;
+	}
+	#id1{
+		font-size: 25px;
+		border-top: solid 5px black;
+		border-left: solid 5px black;
+		border-right: solid 5px black;
+		border-bottom: solid 5px black;
+		background-color: #d6cea3;
+		margin-right: 20px;
+	}
+	#id2{
+		font-size: 25px;
+		border-top: solid 5px black;
+		border-left: solid 5px black;
+		border-right: solid 5px black;
+		border-bottom: solid 5px black;
+		background-color: #d6cea3;
+		margin-left: 20px;
+	}
+</style>
+</head>
+<body>
+	<center><h1>˚ʚ♡ɞ˚Pink Calculator˚ʚ♡ɞ˚</h1><br>
+	<form>
+		<input type="text" placeholder="Enter a value for x" id="id1">
+		<input type="text" placeholder="Enter a value for y" id="id2"><br><br>
+		<input type="submit" value="multiply" onclick="multiply()" class="M">
+		<input type="submit" value="divide" onclick="divide()" class="D">
+		<input type="submit" value="add" onclick="add()" class="A">
+		<input type="submit" value="subtract" onclick="subtract()"class="S">
+		<input type="submit" value="x raised to y" onclick="exponentiation()"class="E">
+		<input type="submit" value="Get the remainder" onclick="remainder()"class="R"><br><br>
+		<input type="submit" value="greater than" onclick="greater_than()" class="G">
+		<input type="submit" value="less than" onclick="less_than()" class="L">
+	<script>
+		function multiply(){
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			product = num1*num2
+				window.alert(product);
+		}
+		function divide(){
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			quotient = num1/num2;
+			window.alert(quotient);
+		}
+		function add(){
+			num1 = Number(document.getElementById('id1').value);
+			num2 = Number(document.getElementById('id2').value);
+			sum = num1+num2;
+				window.alert(sum);
+		}
+		function subtract(){
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			difference = num1-num2;
+				window.alert(difference);
+		}
+		function Exponentiation(){
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			exponentiation = num1**num2;
+				window.alert(exponentiation);
+		}
+		function remainder(){
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			remainder = num1%num2;
+			window.alert(remainder);
+		}
+		function greater_than(){
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			greater_than = num1>num2;
+			window.alert(greater_than);
+		}
+		function less_than(){
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			less_than = num1<num2;
+			window.alert(less_than);
+		}
+	</script>
+</center>
+</body>
+</html>
